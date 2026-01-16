@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% block title %}Prediction Result{% endblock %}
+
+{% block content %}
+<div class="container mt-5 fade-in">
+
+    <div class="row align-items-center">
+
+        <!-- LEFT SIDE : RESULT DETAILS -->
+        <div class="col-md-6">
+
+            <h2 class="fw-bold mb-4">Prediction Result</h2>
+
+            {% if result == "Diabetes Detected" %}
+                <div class="alert alert-danger">
+                    <h4>{{ result }}</h4>
+                    <p>
+                        According to the medical values entered,
+                        the system indicates a higher possibility of diabetes.
+                    </p>
+                </div>
+            {% else %}
+                <div class="alert alert-success">
+                    <h4>{{ result }}</h4>
+                    <p>
+                        Based on the provided medical information,
+                        no diabetes risk was identified.
+                    </p>
+                </div>
+            {% endif %}
+
+        <div class="d-flex flex-wrap gap-3 mt-4">
+            <a href="{% url 'medical_info' %}" class="btn main-btn">
+                Enter New Data
+            </a>
+
+            <a href="{% url 'help_page' %}" class="btn main-btn">
+                Help me to get rid of
+            </a>
+        </div>
+
+        
+
+        <!-- RIGHT SIDE : IMAGE -->
+        <div class="col-md-6 sticky-image">
+            <img
+                src="https://media.istockphoto.com/id/1201263660/vector/diabetes-illustration.jpg"
+                alt="Diabetes Result Illustration"
+                class="img-fluid"
+                style="max-width: 350px;">
+        </div>
+
+    </div>
+</div>
+{% endblock %}

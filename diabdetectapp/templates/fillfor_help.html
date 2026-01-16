@@ -1,0 +1,107 @@
+{% extends 'base.html' %}
+{% block title %}Precautions{% endblock %}
+
+{% block content %}
+<div class="container mt-5 fade-in">
+
+    <div class="row align-items-start">
+
+        <!-- LEFT CONTENT -->
+        <div class="mb-4 p-3 rounded" style="background-color:#0f172a; border-left:4px solid #22c55e;">
+            <strong>Note:</strong> Lifestyle changes play a major role in controlling diabetes.
+         </div>
+
+        <div class="col-md-8">
+
+            <h1 class="fw-bold mb-3">Precautions to Take</h1>
+
+            <h2 class="mb-4">
+                As You Know Not Only Medicine can Cure the Diabeties
+            </h2>
+
+            <p style="line-height: 1.7;">
+                Here are 12 ways to lower blood sugar naturally, many of which also
+                have benefits on overall health.
+                <br><br>
+
+                <strong>Limit Carbs</strong><br>
+                Carbohydrates are broken down and absorbed as sugar in the body.
+                Sweets, refined grains, juices, and sodas raise blood sugar quickly.
+                Replacing simple carbs with complex carbs such as whole grains and
+                vegetables helps control blood sugar levels.
+                <br><br>
+
+                <strong>Drink Water</strong><br>
+                Staying hydrated helps prevent blood sugar concentration.
+                Avoid sugary beverages and stick to water.
+                <br><br>
+
+                <strong>Add Fiber to Your Diet</strong><br>
+                Fiber does not increase blood sugar and helps improve digestion,
+                cholesterol, and fullness.
+                <br><br>
+
+                <strong>Add Raw or Cooked Garlic</strong><br>
+                Garlic may help improve insulin sensitivity and overall heart health.
+                <br><br>
+
+                <strong>Try Probiotics</strong><br>
+                Found in yogurt and fermented foods, probiotics can help reduce
+                fasting blood sugar and improve insulin sensitivity.
+                <br><br>
+
+                <strong>Eat Smaller Meals</strong><br>
+                Smaller, balanced meals help prevent sugar spikes and overeating.
+                <br><br>
+
+                <strong>Don’t Skip Breakfast</strong><br>
+                A healthy breakfast reduces insulin resistance.
+                <br><br>
+
+                <strong>Achieve a Healthy Weight</strong><br>
+                Weight control can even help put diabetes into remission.
+                <br><br>
+
+                <strong>Exercise Regularly</strong><br>
+                At least 150 minutes of moderate exercise per week is recommended.
+                <br><br>
+
+                <strong>Quit Smoking</strong><br>
+                Smoking increases blood sugar and insulin requirements.
+                <br><br>
+
+                <strong>Get More Sleep</strong><br>
+                Aim for at least seven hours of quality sleep.
+                <br><br>
+
+                <strong>Reduce Stress</strong><br>
+                Stress hormones raise blood sugar. Yoga and meditation help.
+                <br><br>
+
+                <em>
+                Never abruptly stop insulin without medical advice.
+                Always consult your healthcare provider before making changes.
+                </em>
+            </p>
+
+            <a href="{% url 'medical_info' %}" class="btn main-btn mt-4">
+                Back to Prediction
+            </a>
+
+        </div>
+
+        <!-- RIGHT SIDE INFO -->
+        <div class="col-md-4 sticky-image text-center">
+
+        <div class="p-4 rounded shadow" style="background-color:#111827;">
+            <h5 class="fw-bold mb-2">Aditya Birla Hospital</h5>
+            <p class="mb-1">Diabetes & Lifestyle Care</p>
+            <p class="mb-0">📞 020-3531452</p>
+        </div>
+
+
+        </div>
+
+    </div>
+</div>
+{% endblock %}

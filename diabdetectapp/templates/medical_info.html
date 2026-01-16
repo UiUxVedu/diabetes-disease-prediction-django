@@ -1,0 +1,82 @@
+{% extends 'base.html' %}
+{% block title %}Medical Information{% endblock %}
+
+{% block content %}
+<div class="container mt-5 fade-in">
+
+    <div class="row align-items-start">
+
+        <!-- LEFT: FORM -->
+        <div class="col-md-6">
+
+            <h3 class="mb-4">Patient Medical Information</h3>
+            <p class="mb-4" style="opacity:0.8;">
+            Please enter accurate medical values for better prediction results.
+            </p>
+
+            <form method="POST">
+                {% csrf_token %}
+
+                <!-- Glucose -->
+                <div class="mb-3">
+                    <label class="mb-1">Plasma Glucose Concentration</label>
+                    <input type="number" name="glucose" class="form-control" required>
+                </div>
+
+                <!-- Blood Pressure -->
+                <div class="mb-3">
+                    <label class="mb-1">Diastolic Blood Pressure</label>
+                    <input type="number" name="blood_pressure" class="form-control" required>
+                </div>
+
+                <!-- Skin Thickness -->
+                <div class="mb-3">
+                    <label class="mb-1">Triceps Skinfold Thickness</label>
+                    <input type="number" name="skinfold" class="form-control">
+                </div>
+
+                <!-- Insulin -->
+                <div class="mb-3">
+                    <label class="mb-1">2-Hour Serum Insulin</label>
+                    <input type="number" name="insulin" class="form-control">
+                </div>
+
+                <!-- BMI -->
+                <div class="mb-3">
+                    <label class="mb-1">Body Mass Index (BMI)</label>
+                    <input type="number" step="0.1" name="bmi" class="form-control" required>
+                </div>
+
+                <!-- Diabetes Pedigree Function -->
+                <div class="mb-3">
+                    <label class="mb-1">Diabetes Pedigree Function</label>
+                    <input type="number" step="0.01" name="dpf" class="form-control" required>
+                </div>
+
+                <!-- Age -->
+                <div class="mb-3">
+                    <label class="mb-1">Age</label>
+                    <input type="number" name="age" class="form-control" required>
+                </div>
+                <hr style="border-color:#334155;">
+
+                <button type="submit" class="btn main-btn w-100 mt-3">
+                    Submit Medical Data
+                </button>
+
+            </form>
+
+        </div>
+
+        <!-- RIGHT: IMAGE -->
+        <div class="col-md-6 sticky-image">
+            <img
+                src="https://media.istockphoto.com/id/1201263660/vector/diabetes-illustration.jpg?s=612x612&w=0&k=20&c=p-vuAeF8ODdZ2arqie3GZT-ym-XNlxTRPUG0Vw4FW5I="
+                alt="Medical Data Illustration"
+                class="img-fluid"
+                style="max-width: 350px;">
+        </div>
+
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<div class="container mt-5 fade-in">
+
+    <div class="row align-items-center">
+
+        <!-- LEFT CONTENT -->
+        <div class="col-md-6 p-4 rounded" style="background-color:#111827; box-shadow:0 8px 25px rgba(0,0,0,0.4);">
+
+            <h1 class="fw-bold mb-3">Diabetic Disease Prediction</h1>
+
+            <p>
+                Predict diabetes using medical parameters and
+                basic machine learning models.
+            </p>
+
+            <a href="{% url 'login' %}" class="btn main-btn me-2 mt-3">Login</a>
+            <a href="{% url 'register' %}" class="btn main-btn mt-3">Register</a>
+            
+        </div>
+
+        <!-- RIGHT IMAGE -->
+        <div class="col-md-6 text-center">
+            <img 
+                src="https://media.istockphoto.com/id/1201263660/vector/diabetes-illustration.jpg?s=612x612&w=0&k=20&c=p-vuAeF8ODdZ2arqie3GZT-ym-XNlxTRPUG0Vw4FW5I="
+                alt="Diabetes Illustration"
+                class="img-fluid"
+                style="max-width: 350px;">
+        </div>
+
+    </div>
+</div>
+<!-- ABOUT SECTION -->
+<div class="container mt-5 reveal">
+    <div class="row">
+        <div class="col-md-12">
+            <h3 class="fw-bold mb-3">About This Project</h3>
+            <p>
+                This project focuses on predicting the likelihood of diabetes
+                using patient medical data and basic machine learning concepts.
+            </p>
+            <p>
+                Users can register, log in, and submit medical details which
+                are later used for prediction and analysis.
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- HOW IT WORKS SECTION -->
+<div class="container mt-5 mb-5 reveal">
+    <div class="row">
+        <div class="col-md-12">
+            <h3 class="fw-bold mb-3">How It Works</h3>
+            <ul>
+                <li>User creates an account and logs in</li>
+                <li>Medical details such as glucose and BMI are entered</li>
+                <li>Data is processed using a prediction model</li>
+                <li>The system shows diabetes risk</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
