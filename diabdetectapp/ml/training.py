@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from sklearn.metrics import confusion_matrix, classification_report, accuracy_score
 
-df= pd.read_csv(r'C:\Users\91962\Desktop\Django\newproject\diab_detect\diabdetectapp\diabetes (1).csv')
+df= pd.read_csv(r'C:\Users\91962\Desktop\Django\newproject\diab_detect\diabdetectapp\diabetes.csv')
 
 print(df.head())
 # Shows the Top 5 record from Dataset.
