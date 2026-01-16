@@ -1,6 +1,6 @@
-# Diabetes Disease Prediction Web Application (Build During- 12th Nov 2025 to 9th Dec 2025)
+# Diabetes Disease Prediction Web Application 
 
-## Project Description
+# Project Description (Build During- 12th Nov 2025 to 9th Dec 2025).
 
 This project is a full-stack web application developed using **Django** and **Machine Learning** to predict the likelihood of diabetes based on medical parameters provided by the user. The application allows users to register, log in securely, enter medical information, and receive a prediction result generated using a trained machine learning model.
 
